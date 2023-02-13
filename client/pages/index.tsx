@@ -45,9 +45,8 @@ const Home: NextPage = () => {
             daysLeft,
             hostID,
           }: campaignDataInterface) => (
-            <GridItem>
+            <GridItem key={campaignID as string}>
               <CampaignCard
-                key={campaignID as string}
                 category={category}
                 campaignName={campaignName}
                 currentAmount={currentAmount}
