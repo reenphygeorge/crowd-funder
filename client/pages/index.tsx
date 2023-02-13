@@ -1,10 +1,10 @@
 import { Flex, Heading, Grid, GridItem } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import { CampaignCard } from "../components/campaignCard";
-
 import campaignData from "../utils/campaignData.json";
 
 interface campaignDataInterface {
+  campaignID: String;
   category: String;
   campaignName: String;
   currentAmount: String;
@@ -37,6 +37,7 @@ const Home: NextPage = () => {
       >
         {campaignData.map(
           ({
+            campaignID,
             category,
             campaignName,
             currentAmount,
@@ -46,6 +47,7 @@ const Home: NextPage = () => {
           }: campaignDataInterface) => (
             <GridItem>
               <CampaignCard
+                key={campaignID as string}
                 category={category}
                 campaignName={campaignName}
                 currentAmount={currentAmount}
