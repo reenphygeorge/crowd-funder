@@ -1,0 +1,34 @@
+[
+  {
+    "category": "education",
+    "campaignName": "Sofa Campaign",
+    "daysLeft": "2",
+    "currentAmount": "0.002",
+    "requiredAmount": "0.1",
+    "hostID": "0x3x4567xb4638xbdgjha"
+  },
+  {
+    "category": "health",
+    "campaignName": "Cancer Treatment",
+    "daysLeft": "5",
+    "currentAmount": "0.010",
+    "requiredAmount": "0.9",
+    "hostID": "yu25467320esnmssc125x"
+  },
+  {
+    "category": "education",
+    "campaignName": "Sofa Campaign",
+    "daysLeft": "2",
+    "currentAmount": "0.002",
+    "requiredAmount": "0.1",
+    "hostID": "0x3x4567xb4638xbdgjha"
+  },
+  {
+    "category": "health",
+    "campaignName": "Cancer Treatment",
+    "daysLeft": "5",
+    "currentAmount": "0.010",
+    "requiredAmount": "0.9",
+    "hostID": "yu25467320esnmssc125x"
+  }
+]
