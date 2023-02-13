@@ -31,7 +31,7 @@ export const CampaignCard = ({
       _hover={{
         cursor: "pointer",
         transition: "0.5s",
-        transform: "scale(1.1)",
+        transform: "scale(1.03)",
       }}
       maxW="xs"
       backgroundColor="#191a1c"
