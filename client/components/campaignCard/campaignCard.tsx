@@ -26,7 +26,17 @@ export const CampaignCard = ({
   hostID,
 }: campaignData) => {
   return (
-    <Card maxW="xs" backgroundColor="#191a1c" borderRadius="lg">
+    <Card
+      transition="0.5s"
+      _hover={{
+        cursor: "pointer",
+        transition: "0.5s",
+        transform: "scale(1.1)",
+      }}
+      maxW="xs"
+      backgroundColor="#191a1c"
+      borderRadius="lg"
+    >
       <CardBody>
         <Image
           src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"

@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           All Campaigns
         </Heading>
         <Heading mb="10" size="md" fontWeight="800">
-          &nbsp;(8)
+          &nbsp;({campaignData.length})
         </Heading>
       </Flex>
       <Grid
