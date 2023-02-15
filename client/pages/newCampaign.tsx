@@ -110,35 +110,22 @@ const NewCampaign: NextPage = () => {
               </InputGroup>
             </GridItem>
           </Grid>
-          <Center>
-            <Grid
-              mt="5"
-              mb="10"
-              templateColumns="repeat(2, 1fr)"
-              gap={10}
-              justifyContent={["start", "start", "center"]}
-            >
-              <GridItem>
-                <Button
-                  bgGradient="linear(to-l, #7928CA, #FF0080)"
-                  _hover={{
-                    opacity: "0.8",
-                  }}
-                  size="lg"
-                >
-                  Submit
-                </Button>
-              </GridItem>
-
-              <GridItem>
-                <Button bgColor="#2c2c2c" _hover={{ bg: "#1E1E1E" }} size="lg">
-                  Clear
-                </Button>
-              </GridItem>
-            </Grid>
-          </Center>
         </FormControl>
       </Flex>
+      <Center>
+        <Button
+          mt="5"
+          mb="10"
+          bgGradient="linear(to-l, #7928CA, #FF0080)"
+          _hover={{
+            opacity: "0.8",
+          }}
+          size="lg"
+          w="xs"
+        >
+          Submit
+        </Button>
+      </Center>
     </>
   );
 };
