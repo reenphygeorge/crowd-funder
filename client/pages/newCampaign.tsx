@@ -30,13 +30,13 @@ interface campaignData {
 }
 
 const NewCampaign: NextPage = () => {
-  const [campaignObject, setcampaignObject] = useState<campaignData>({
-    Name: "",
-    Description: "",
-    Category: "",
-    requiredAmount: "",
-    endDate: "",
-  });
+  // const [campaignObject, setcampaignObject] = useState<campaignData>({
+  //   Name: "",
+  //   Description: "",
+  //   Category: "",
+  //   requiredAmount: "",
+  //   endDate: "",
+  // });
 
   const handleForm = (e: any) => {};
 
@@ -94,7 +94,7 @@ const NewCampaign: NextPage = () => {
                   // value={campaignObject.requiredAmount}
                   placeholder="0.001"
                 />
-                <InputRightAddon children="ETH" bgColor="black" />
+                <InputRightAddon bgColor="black">ETH</InputRightAddon>
               </InputGroup>
             </GridItem>
 
