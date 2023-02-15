@@ -1,35 +1,43 @@
 [
   {
-    "campaignID": "102fewfw3789wefe9083",
+    "campaignID": "0",
     "category": "education",
     "campaignName": "Sofa Campaign",
+    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ratione officia, mollitia est maxime quod vitae animi totam voluptatibus sunt fugiat alias eaque dolor, obcaecati odio tenetur, quaerat reiciendis amet.",
+    "lastDate": "12-03-2023",
     "daysLeft": "2",
     "currentAmount": "0.002",
     "requiredAmount": "0.1",
     "hostID": "0x3x4567xb4638xbdgjha"
   },
   {
-    "campaignID": "fewuloviu4tyqvt423wew",
+    "campaignID": "1",
     "category": "health",
     "campaignName": "Cancer Treatment",
+    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ratione officia, mollitia est maxime quod vitae animi totam voluptatibus sunt fugiat alias eaque dolor, obcaecati odio tenetur, quaerat reiciendis amet.",
+    "lastDate": "12-03-2023",
     "daysLeft": "5",
     "currentAmount": "0.010",
     "requiredAmount": "0.9",
     "hostID": "yu25467320esnmssc125x"
   },
   {
-    "campaignID": "364hf2crif32loi3487962x",
+    "campaignID": "2",
     "category": "education",
     "campaignName": "Sofa Campaign",
+    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ratione officia, mollitia est maxime quod vitae animi totam voluptatibus sunt fugiat alias eaque dolor, obcaecati odio tenetur, quaerat reiciendis amet.21",
+    "lastDate": "12-03-2023",
     "daysLeft": "2",
     "currentAmount": "0.002",
     "requiredAmount": "0.1",
     "hostID": "0x3x4567xb4638xbdgjha"
   },
   {
-    "campaignID": "f4v3pvq3t4f2tf6374bsdsk",
+    "campaignID": "3",
     "category": "health",
     "campaignName": "Cancer Treatment",
+    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ratione officia, mollitia est maxime quod vitae animi totam voluptatibus sunt fugiat alias eaque dolor, obcaecati odio tenetur, quaerat reiciendis amet.",
+    "lastDate": "12-03-2023",
     "daysLeft": "5",
     "currentAmount": "0.010",
     "requiredAmount": "0.9",
