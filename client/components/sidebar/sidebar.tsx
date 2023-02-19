@@ -12,8 +12,7 @@ export const Sidebar = () => {
         <Box mt={10}>
           <FaPlus size="20" />
         </Box>
-
-        <Box position={"absolute"} bottom="10">
+        <Box mt={10} >
           <BsPersonCircle size="20" />
         </Box>
       </Box>
