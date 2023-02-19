@@ -20,14 +20,17 @@ import {
 } from "@chakra-ui/react";
 import { NextPage } from "next";
 import { useState } from "react";
+import { useStateContext } from "../context";
+import { ethers } from 'ethers';
 
-interface campaignData {
-  Name: String;
-  Description: String;
-  Category: String;
-  requiredAmount: String;
-  endDate: String;
-}
+// interface campaignData {
+//   Name: String;
+//   Description: String;
+//   Category: String;
+//   requiredAmount: String;
+//   endDate: String;
+//   image: String
+// }
 
 const NewCampaign: NextPage = () => {
   // const [campaignObject, setcampaignObject] = useState<campaignData>({
@@ -38,7 +41,27 @@ const NewCampaign: NextPage = () => {
   //   endDate: "",
   // });
 
-  const handleForm = (e: any) => {};
+  
+  const [isLoading, setIsLoading] = useState(false);
+  // @ts-ignore
+  const { createCampaign } = useStateContext();
+  const [form, setForm] = useState({
+    name: '',
+    title: '',
+    description: '',
+    target: '', 
+    deadline: '',
+    image: ''
+  });
+
+  // @ts-ignore
+  const handleFormFieldChange = (fieldName, e) => {
+    setForm({ ...form, [fieldName]: e.target.value })
+  }
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+  }
 
   return (
     <>
@@ -62,6 +85,9 @@ const NewCampaign: NextPage = () => {
               <FormLabel>Campaign Name</FormLabel>
               <Input
                 type="text"
+                value={form.title}
+                // @ts-ignore
+            handleChange={(e) => handleFormFieldChange('title', e)}
                 // value={campaignObject.Name}
                 // onChange={(e: any) =>
                 // setcampaignObject({ Name: e.target.value })
@@ -74,16 +100,20 @@ const NewCampaign: NextPage = () => {
               <Textarea
                 // value={campaignObject.Description}
                 placeholder="Write a short description about the campaign"
+                value={form.description}
+                onChange={(e) => handleFormFieldChange('description', e)}
               />
             </GridItem>
 
             <GridItem>
               <FormLabel>Select category</FormLabel>
-              <Select defaultValue="health">
+              <Select defaultValue="health" value={form.target}
+            onChange={(e) => handleFormFieldChange('target', e)}>
                 <option value="health">Health</option>
                 <option value="education">Education</option>
                 <option value="other">Other</option>
               </Select>
+      
             </GridItem>
 
             <GridItem>
@@ -93,21 +123,28 @@ const NewCampaign: NextPage = () => {
                   type="tel"
                   // value={campaignObject.requiredAmount}
                   placeholder="0.001"
+                  value={form.target}
+                  onChange={(e) => handleFormFieldChange('target', e)}
                 />
                 <InputRightAddon bgColor="black">ETH</InputRightAddon>
               </InputGroup>
             </GridItem>
 
             <GridItem>
+              <>
               <FormLabel>End Date</FormLabel>
               <Input type="date" />
+              value={form.deadline}
+            onChange={(e:any) => handleFormFieldChange('deadline', e)}
+            </>
             </GridItem>
 
             <GridItem>
               <FormLabel mb="4">Campaign Poster</FormLabel>
-              <InputGroup>
-                <input type="file" />
-              </InputGroup>
+                <input type="url"
+                value={form.image}
+                onChange={(e) => handleFormFieldChange('image', e)} />
+              
             </GridItem>
           </Grid>
         </FormControl>
