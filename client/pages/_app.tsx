@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <HStack position="fixed" zIndex="10">
             <Sidebar />
           </HStack>
-          <Container maxW="8xl" mt={10}>
+          <Container maxW="8xl" mt={10} ml={10}>
             <Component {...pageProps} />
           </Container>
         </ChakraProvider>
