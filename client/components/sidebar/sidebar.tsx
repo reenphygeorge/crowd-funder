@@ -1,35 +1,22 @@
-import { Box, Flex, VStack } from "@chakra-ui/react";
-import { AiFillHome } from "react-icons/ai";
+import { Box, Flex, HStack, VStack } from "@chakra-ui/react";
+import { BsPersonCircle } from "react-icons/bs";
+import { FaHome, FaPlus } from "react-icons/fa";
 
 export const Sidebar = () => {
   return (
     <>
-      {/* <Flex
-        flexDirection="column"
-        // justifyItems="between"
-        w="76px"
-        ml="12"
-        mt="12"
-        pt={5}
-        alignItems="center"
-        bgColor="#1c1c24"
-        rounded="3xl"
-      > */}
-      <VStack>
-        <Box pt="10px">
-          <AiFillHome size="40" />
+      <Box bgColor="gray.800" p={5} rounded="2xl" m={5} h="90vh">
+        <Box>
+          <FaHome size="20" />
         </Box>
         <Box mt={10}>
-          <AiFillHome size="40" />
+          <FaPlus size="20" />
         </Box>
-        <Box mt={10}>
-          <AiFillHome size="40" />
+
+        <Box position={"absolute"} bottom="10">
+          <BsPersonCircle size="20" />
         </Box>
-        <Box mt={10}>
-          <AiFillHome size="40" />
-        </Box>
-      </VStack>
-      {/* </Flex> */}
+      </Box>
     </>
   );
 };

@@ -1,8 +1,9 @@
 import type { AppProps } from "next/app";
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
-import { ChakraProvider, Container } from "@chakra-ui/react";
+import { ChakraProvider, Container, HStack } from "@chakra-ui/react";
 import Head from "next/head";
+import { Sidebar } from "../components/sidebar";
 
 // This is the chainId your dApp will work on.
 const activeChainId = ChainId.Mainnet;
@@ -21,7 +22,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <ThirdwebProvider desiredChainId={activeChainId}>
         <ChakraProvider>
-          <Container maxW="8xl" mt="12">
+          <HStack position="fixed" zIndex="10">
+            <Sidebar />
+          </HStack>
+          <Container maxW="8xl" mt={10}>
             <Component {...pageProps} />
           </Container>
         </ChakraProvider>
