@@ -22,12 +22,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <ThirdwebProvider desiredChainId={activeChainId}>
         <ChakraProvider>
-          <div className="container-main">
+          <HStack position="fixed" zIndex="10">
             <Sidebar />
-          <Container maxW="8xl" mt={10} m-auto>
+          </HStack>
+          <Container maxW="8xl" mt={10}>
             <Component {...pageProps} />
           </Container>
-          </div>
         </ChakraProvider>
       </ThirdwebProvider>
     </>

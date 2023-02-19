@@ -21,7 +21,3 @@ body {
   background: #000000 !important;
 }
 
-.container-main{
-  display: flex;
-  flex-direction: row;
-}
